@@ -15,6 +15,18 @@ public class TicTacToeController {
         view = new TicTacToeView();
         
     }
+    public String getMarkAsString(int row, int col) {       
+        return (model.getMark(row, col).toString());       
+    }
+   
+    public TicTacToeView getView() {       
+        return view;       
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent event) {
+        // INSERT YOUR CODE HERE
+    }
 
     public void start() {
     

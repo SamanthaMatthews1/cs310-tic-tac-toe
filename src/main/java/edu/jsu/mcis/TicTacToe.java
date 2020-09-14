@@ -1,4 +1,8 @@
 package edu.jsu.mcis;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
 
 public class TicTacToe {
     
@@ -27,7 +31,11 @@ public class TicTacToe {
         
         /* Start Main Loop */
         
-        controller.start();
+        JFrame win = new JFrame("Tic-Tac-Toe");
+        win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
+        win.add(controller.getView());
+        win.pack();
+        win.setVisible(true);
         
     }
     
